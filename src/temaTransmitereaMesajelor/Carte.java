@@ -17,6 +17,7 @@ public class Carte {
 			System.out.println("carte2 are mai multe pagini");
 	}
 	
+// this is a test
 //	public String toString() {
 //		return "hello world " + nrPagini;
 //	}

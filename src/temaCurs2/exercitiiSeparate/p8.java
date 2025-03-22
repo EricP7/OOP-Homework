@@ -6,6 +6,7 @@ public class p8 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		@SuppressWarnings("resource")
 		Scanner inputObj = new Scanner(System.in);
 		System.out.println("Problema8:\n");
 		System.out.println("n= ");

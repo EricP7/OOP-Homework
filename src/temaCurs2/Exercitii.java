@@ -8,6 +8,7 @@ public class Exercitii {
 		//problema1
 		System.out.println("Problema 1:\n");
 
+		@SuppressWarnings("resource")
 		Scanner inputObj = new Scanner(System.in);
 		System.out.println("scrie un numar: ");
 		int n1 = inputObj.nextInt();

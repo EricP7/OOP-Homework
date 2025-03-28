@@ -15,6 +15,13 @@ public class Carte {
 			System.out.println("carte1 are mai multe pagini");
 		else
 			System.out.println("carte2 are mai multe pagini");
+		
+	}
+	
+	public boolean equals(Carte carte1) {
+		if(this.nrPagini == carte1.nrPagini)
+			return true;
+		return false;
 	}
 	
 // this is a test
@@ -27,7 +34,7 @@ public class Carte {
 		Carte carte1 = new Carte(200);
 		Carte carte2 = new Carte(100);
 
-		carte1.potrivita(carte1, carte2);
+		System.out.println(carte1.equals(carte2));
 		
 	}
 

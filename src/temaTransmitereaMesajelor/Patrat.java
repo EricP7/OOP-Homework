@@ -12,13 +12,6 @@ public class Patrat {
 		this.latura = latura;
 	}
 	
-	/*nu am inteles daca trebuie sa facem o metoda
-	 * care se numeste 'potrivita' 
-	 * sau sa facem o metoda potrivita pentru o anumita actiune*/
-	public void potrivita() {
-		
-	}
-	
 	public String toString() {
 		return "Patrat " + latura + " aria " + latura*latura;
 	}

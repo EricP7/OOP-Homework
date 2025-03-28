@@ -8,26 +8,27 @@ public class Piramida {
 		this.n = n;
 	}
 	
-	public void afisare() {
+	public String toString() {
+		String piramidaStr = "";
 		for(int i = 1; i <= n; i++) {
 			for(int j=n; j>=i; j--) {
-				System.out.print(i);
+				piramidaStr += i + " ";
 			}
-			System.out.println();
+			piramidaStr += "\n";
 		}
-		System.out.println();
+		return piramidaStr;
 	}
 
 	public static void main(String[] args) {
 		
 		Piramida piramida1 = new Piramida(4);
-		piramida1.afisare();
+		System.out.println(piramida1);
 		
 		Piramida piramida2 = new Piramida(6);
-		piramida2.afisare();
+		System.out.println(piramida2);
 		
 		Piramida piramida3 = new Piramida(3);
-		piramida3.afisare();
+		System.out.println(piramida3);
 
 	}
 

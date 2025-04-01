@@ -1,11 +1,15 @@
 package statisticiPeIntervaleNumerice;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 public class Statistica {
 
 	public static void main(String[] args) {
+		
+		
 		
 		try {
 			
@@ -16,6 +20,8 @@ public class Statistica {
 			
 			while((linie = nrIntervaleInput.readLine()) != null)
 				nrIntervale++;
+			
+			Interval.setNrIntervale(nrIntervale);
 			
 			nrIntervaleInput.close();
 			
@@ -38,16 +44,46 @@ public class Statistica {
 				
 				intervale[i] = new Interval(min, max);
 				
-				System.out.println(intervale[i]);
 				
 				i++;
+				
+				}
+				intervaleInput.close();
+			
+			
+		
+				BufferedReader br = new BufferedReader(new FileReader("resources/statisticiPeIntervaleNumerice/numere.dat"));
+			
+				linie = "";
+			
+				while((linie = br.readLine()) != null) {
+					Double numar = Double.valueOf(linie);
+					for(i = 0; i < nrIntervale; i++) 
+						intervale[i].verificare(numar);
+					
+					Interval.numereTestate();
+				
+				}
+				
+				br.close();
+				
+				
+				BufferedWriter bw = new BufferedWriter(new FileWriter("resources/statisticiPeIntervaleNumerice/statistica.dat"));
+				
+				for(i=0; i< nrIntervale; i++) {
+					bw.write(intervale[i].scriereFisier());
+					//System.out.println(intervale[i].scriereFisier());
+				}
+				
+				bw.close();
+				
+			} catch (Exception e) {
+				System.out.println("Eroare la citirea fisierului " + e.getMessage());
 			}
 			
-			
-			
-		} catch (Exception e) {
-			System.out.println("Eroare la citirea fisierului " + e.getMessage());
-		}
+		
+		
+		
 
 	}
 

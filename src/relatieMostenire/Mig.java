@@ -12,4 +12,12 @@ public class Mig extends AvionLupta{
     public Mig(String planeID, int totalEnginePower) {
         super(planeID, totalEnginePower);
     }
+
+    public void launchMissle() {
+        super.launchMissle();
+    }
+
+    public String toString(){
+        return "\nMig: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN\n";
+    }
 }

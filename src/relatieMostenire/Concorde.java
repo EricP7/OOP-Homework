@@ -12,4 +12,8 @@ public class Concorde extends AvionCalatori{
     public Concorde(String planeID, int totalEnginePower, int maxPassengers) {
         super(planeID, totalEnginePower, maxPassengers);
     }
+
+    public String toString(){
+        return "\nConcorde: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN\n" + "Max Passengers: " + getMaxPassengers();
+    }
 }

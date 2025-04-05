@@ -1,6 +1,8 @@
 package relatieMostenire;
 
-public class AvionLupta extends Tara{
-    private Mig[] mig;
-    private TomCat[] tomcat;
+public class AvionLupta extends Avion {
+
+    public void launchMissle(){
+        System.out.println(getPlaneID() + " - Initiating missle launch procedure - Acquiring target - Launching missle - Breaking away - Missle launch complete");
+    }
 }

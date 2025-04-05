@@ -1,6 +1,11 @@
 package relatieMostenire;
 
-public class AvionCalatori extends Tara{
-    private Boeing[] boeing;
-    private Concorde[] concorde;
+public class AvionCalatori extends Avion {
+
+    private int maxPassengers;
+
+
+    public int getMaxPassengers(){
+        return maxPassengers;
+    }
 }

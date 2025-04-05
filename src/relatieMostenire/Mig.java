@@ -8,4 +8,8 @@ public class Mig extends AvionLupta{
     public void normalGeometry(){
         System.out.println(getPlaneID() + " - Normal geometry selected");
     }
+
+    public Mig(String planeID, int totalEnginePower) {
+        super(planeID, totalEnginePower);
+    }
 }

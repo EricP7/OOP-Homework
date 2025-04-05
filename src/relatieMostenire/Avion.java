@@ -21,4 +21,9 @@ public class Avion {
     public void fly(){
         System.out.println(planeID + "Flying");
     }
+
+    public Avion(String planeID, int totalEnginePower) {
+        this.planeID = planeID;
+        this.totalEnginePower = totalEnginePower;
+    }
 }

@@ -18,6 +18,6 @@ public class Mig extends AvionLupta{
     }
 
     public String toString(){
-        return "\nMig: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN\n";
+        return "\nMig: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN";
     }
 }

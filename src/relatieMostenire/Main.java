@@ -13,10 +13,10 @@ public class Main {
         int totalEnginePower_Mig = 100;
         int totalEnginePower_TomCat = 251;
 
-        Avion Boeing737 = new Boeing(planeID_Boeing, totalEnginePower_Boeing, 150);
-        Avion Concorde = new Concorde(planeID_Concorde, totalEnginePower_Concorde, 110);
-        Avion MiG25 = new Mig(planeID_Mig, totalEnginePower_Mig);
-        Avion F14TomCat = new TomCat(planeID_TomCat, totalEnginePower_TomCat);
+        AvionCalatori Boeing737 = new Boeing(planeID_Boeing, totalEnginePower_Boeing, 150);
+        AvionCalatori Concorde = new Concorde(planeID_Concorde, totalEnginePower_Concorde, 110);
+        AvionLupta MiG25 = new Mig(planeID_Mig, totalEnginePower_Mig);
+        TomCat F14TomCat = new TomCat(planeID_TomCat, totalEnginePower_TomCat);
 
         System.out.println(Boeing737);
         Boeing737.takeOff();
@@ -29,8 +29,10 @@ public class Main {
         Concorde.land();
 
         System.out.println(MiG25);
-
+        MiG25.launchMissle();
 
         System.out.println(F14TomCat);
+        F14TomCat.refuel();
+        F14TomCat.launchMissle();
     }
 }

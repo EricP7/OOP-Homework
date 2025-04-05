@@ -3,7 +3,7 @@ package relatieMostenire;
 public class TomCat extends AvionLupta{
 
     public void refuel(){
-        System.out.println(getPlaneID() + " - Initiating refueling procedure - Locating refueller - Catching up - Refueling - Refueling complete");
+        System.out.println(super.getPlaneID() + " - Initiating refueling procedure - Locating refueller - Catching up - Refueling - Refueling complete");
     }
 
     public TomCat(String planeID, int totalEnginePower) {
@@ -11,6 +11,6 @@ public class TomCat extends AvionLupta{
     }
 
     public String toString(){
-        return "\nTomCat: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN\n";
+        return "\nTomCat: \n" + "PlaneID: " + getPlaneID() + "\nTotalEnginePower: " + getTotalEnginePower() + " kN";
     }
 }

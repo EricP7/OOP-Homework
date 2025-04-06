@@ -6,7 +6,8 @@ public class ReadNetClient {
 
 		ReadNet readNet = new ReadNet("https://operationworld.org/locations/europe/");
 
-		String pageContent = readNet.readWebLink();
+		//String pageContent = readNet.readWebLink();
+		readNet.readWebLink();
 
 //		System.out.println(pageContent);
 	}

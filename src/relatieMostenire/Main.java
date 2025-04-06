@@ -30,9 +30,15 @@ public class Main {
 
         System.out.println(MiG25);
         MiG25.launchMissle();
+        MiG25.takeOff();
+        MiG25.fly();
+        MiG25.land();
 
         System.out.println(F14TomCat);
         F14TomCat.refuel();
         F14TomCat.launchMissle();
+        F14TomCat.takeOff();
+        F14TomCat.fly();
+        F14TomCat.land();
     }
 }

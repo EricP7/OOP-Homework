@@ -45,6 +45,7 @@ public class Pairs {
             System.out.println(pairSet.size());
         }
 
+
         scanner.close();
     }
 }

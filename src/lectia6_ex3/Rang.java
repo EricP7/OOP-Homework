@@ -4,7 +4,7 @@ public enum Rang {
 
     ONE(1), TWO(2), THREE(3), FOUR(4);
 
-    private int cod;
+    private final int cod;
 
     private Rang(int c){
         this.cod = c;

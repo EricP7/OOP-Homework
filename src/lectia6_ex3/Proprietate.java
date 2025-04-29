@@ -5,10 +5,15 @@ public abstract class Proprietate {
     private String strada;
     private int numar;
     private int suprafata;
+    private static int sumaTotala = 0;
+
+
     public Proprietate(String strada, int numar, int suprafata, int cost) {
         this.strada = strada;
         this.numar = numar;
         this.suprafata = suprafata;
+        sumaTotala += calculCost();
+
     }
 
     public abstract int calculCost();

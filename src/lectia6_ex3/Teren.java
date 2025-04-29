@@ -4,7 +4,7 @@ public class Teren extends Proprietate{
 
     private Rang rang;
 
-    public Teren(String strada, int numar, int suprafata, int cost, Rang rang) {
+    public Teren(String strada, int numar, int suprafata, Rang rang, int cost) {
         super(strada, numar, suprafata, cost);
         this.rang = rang;
 
@@ -19,5 +19,8 @@ public class Teren extends Proprietate{
         return (350 * getSuprafata())/rang.getCod();
     }
 
-
+    @Override
+    public String toString() {
+        return "Strada " + getStrada() + " Nr. " + getNumar() + "\n" + "Suprafata: " + getSuprafata() + "\nCost " + calculCost();
+    }
 }

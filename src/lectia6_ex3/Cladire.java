@@ -10,4 +10,5 @@ public class Cladire extends Proprietate{
     public int calculCost() {
         return 500 * getSuprafata();
     }
+
 }

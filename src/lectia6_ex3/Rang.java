@@ -6,12 +6,11 @@ public enum Rang {
 
     private final int cod;
 
-    private Rang(int c){
-        this.cod = c;
+    Rang(int cod) {
+        this.cod = cod;
     }
 
-    public int getCod(){
+    public int getCod() {
         return cod;
     }
-
 }

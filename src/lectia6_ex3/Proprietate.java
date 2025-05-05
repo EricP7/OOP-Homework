@@ -5,6 +5,7 @@ public abstract class Proprietate {
     private String strada;
     private int numar;
     private int suprafata;
+    private int cost;
     private static int sumaTotala = 0;
 
 
@@ -12,6 +13,7 @@ public abstract class Proprietate {
         this.strada = strada;
         this.numar = numar;
         this.suprafata = suprafata;
+        this.cost = cost;
         sumaTotala += calculCost();
 
     }
@@ -42,4 +44,11 @@ public abstract class Proprietate {
         this.suprafata = suprafata;
     }
 
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
 }

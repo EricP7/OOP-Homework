@@ -1,6 +1,4 @@
-package statisticiPeIntervaleNumerice;
-
-import lectia7_ex3.ContBancar;
+package lectia7_ex3;
 
 public class EURO extends ContBancar implements SumaTotala {
 

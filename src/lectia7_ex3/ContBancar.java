@@ -1,7 +1,5 @@
 package lectia7_ex3;
 
-import statisticiPeIntervaleNumerice.SumaTotala;
-
 public class ContBancar{
 
     private String numarCont;

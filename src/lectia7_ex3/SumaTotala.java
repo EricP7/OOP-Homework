@@ -1,4 +1,4 @@
-package statisticiPeIntervaleNumerice;
+package lectia7_ex3;
 
 public interface SumaTotala {
 

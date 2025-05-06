@@ -1,6 +1,4 @@
-package statisticiPeIntervaleNumerice;
-
-import lectia7_ex3.ContBancar;
+package lectia7_ex3;
 
 public class LEI extends ContBancar implements SumaTotala {
 

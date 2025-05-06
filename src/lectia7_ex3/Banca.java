@@ -1,6 +1,4 @@
-package statisticiPeIntervaleNumerice;
-
-import lectia7_ex3.Client;
+package lectia7_ex3;
 
 import java.util.ArrayList;
 import java.util.List;

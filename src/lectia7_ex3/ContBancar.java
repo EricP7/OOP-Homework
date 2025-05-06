@@ -1,6 +1,8 @@
 package lectia7_ex3;
 
-public class ContBancar {
+import statisticiPeIntervaleNumerice.SumaTotala;
+
+public class ContBancar{
 
     private String numarCont;
     private float suma;
@@ -18,11 +20,12 @@ public class ContBancar {
         this.numarCont = numarCont;
     }
 
-    public double getSuma() {
+    public float getSuma() {
         return suma;
     }
 
     public void setSuma(float suma) {
         this.suma = suma;
     }
+
 }

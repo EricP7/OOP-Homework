@@ -2,7 +2,7 @@ package statisticiPeIntervaleNumerice;
 
 import lectia7_ex3.ContBancar;
 
-public class EURO extends ContBancar implements SumaTotala{
+public class EURO extends ContBancar implements SumaTotala {
 
 
     public EURO(String numarCont, float suma) {
@@ -11,7 +11,12 @@ public class EURO extends ContBancar implements SumaTotala{
 
     public float getDobanda(){
         if(getSuma() > 500)
-            return (float) (getSuma() + 0.3);
-        return (float) getSuma();
+            return (float) 0.3;
+        return 0;
+    }
+
+    @Override
+    public float getSumaTotala() {
+        return getSuma() * 36000;
     }
 }

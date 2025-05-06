@@ -25,6 +25,7 @@ public class Banca {
         clienti.add(c);
     }
 
+
     public void afisareClient(String nume) {
         for (Client client : clienti) {
             if (client.getNume().equals(nume)) {

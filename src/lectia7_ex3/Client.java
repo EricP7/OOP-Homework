@@ -39,6 +39,7 @@ public class Client {
         this.conturi = conturi;
     }
 
+
     @Override
     public String toString() {
         return "Client{" +

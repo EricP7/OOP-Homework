@@ -13,6 +13,7 @@ public class LEI extends ContBancar implements SumaTotala {
         setSuma(getSuma() - suma);
     }
 
+
     @Override
     public float getSumaTotala() {
         return getSuma();

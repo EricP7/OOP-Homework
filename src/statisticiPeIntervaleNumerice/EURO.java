@@ -15,6 +15,7 @@ public class EURO extends ContBancar implements SumaTotala {
         return 0;
     }
 
+
     @Override
     public float getSumaTotala() {
         return getSuma() * 36000;
